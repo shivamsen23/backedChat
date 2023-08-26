@@ -35,7 +35,7 @@ app.post('/upload', upload.single('file'), (req, res) => {
 
 const io = require('socket.io')(server, {
   cors: {
-    origin: 'http://localhost:3000',
+    origin: 'https://chatfrontend-ikm7.onrender.com',
     methods: ['GET', 'POST']
   }
 })
